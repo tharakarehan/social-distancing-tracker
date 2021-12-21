@@ -1,0 +1,1 @@
+python run_sort.py -m model/person-detection-0202/FP16-INT8/person-detection-0202.xml -t 0.3 -i /Users/tharakarehan/Desktop/Object_Tracking/People_Videos/MOT2.mp4 --no_bbox --save --o out4.avi
