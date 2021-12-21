@@ -2,6 +2,8 @@
 
 This is a dashboard for monitoring one meter social distancing for outdoor areas using computer vision. This can be implemented realtime on CPU thanks <a href="https://docs.openvino.ai/latest/index.html" target="_blank">OpenVino</a> model optimisation. To track objects (people), SORT algorithm with Kalmann Filter (tracker) and Hungarian algorithm (data association) has been used. Pre-trained openvino people detection model (MobileNetV2 SSD) has been used for detection. Perspective transformation has been used to get the bird's eye view to enhance the distance measurement accuracy. OpenCV is used for image processing.
 
+Demo: <a href="https://docs.openvino.ai/latest/index.html" target="_blank">https://www.youtube.com/watch?v=joDZVKSOvhM</a>
+
 <p align="center">
   <img src="https://github.com/tharakarehan/social-distancing-tracker/blob/main/sample_nobbox.gif">
 </p>
@@ -29,7 +31,10 @@ Initialize OpenVino
 ```bash
 source /opt/intel/openvino_2021/bin/setupvars.sh  
 ```
-Then run the script run_sort.py
+
+## Usage
+
+Run the script run_sort.py
 
 ```bash
 usage: run_sort.py [-h] [-i INPUT_FILE] -m MODEL_PATH [-t THRESHOLD]
@@ -55,6 +60,13 @@ optional arguments:
   --no_bbox             circles will be drawn instead of bounding boxes
   --slow                reduce the fps of the video if too high
 ```
+With Bounding Boxes for Visualization
+
+<p align="center">
+  <img src="https://github.com/tharakarehan/social-distancing-tracker/blob/main/sample_bbox.gif">
+</p>
+
 ## License
+
 [MIT](https://choosealicense.com/licenses/mit/)
 
