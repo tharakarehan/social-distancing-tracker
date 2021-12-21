@@ -1,6 +1,6 @@
 # social-distancing-tracker
 
-This is a dashboard for monitoring one meter social distancing for outdoor areas using computer vision. This can be implemented realtime on CPU thanks <a href="https://docs.openvino.ai/latest/index.html" target="_blank">OpenVino</a> model optimisation. To track objects (people), SORT algorithm with Kalmann Filter (tracker) and Hungarian algorithm (data association) has been used. Pre-trained openvino people detection model (MobileNetV2 SSD) has been used for detection. Perspective transformation has been used to get the bird's eye view to enhance the distance measurement accuracy. OpenCV is used for image processing.
+This is a dashboard for monitoring one meter social distancing for outdoor areas using computer vision. This can be implemented realtime on CPU thanks to <a href="https://docs.openvino.ai/latest/index.html" target="_blank">OpenVino</a> model optimisation. To track objects (people), SORT algorithm with Kalmann Filter (tracker) and Hungarian algorithm (data association) has been used. Pre-trained openvino people detection model (MobileNetV2 SSD) has been used for detection. Perspective transformation has been used to get the bird's eye view to enhance the distance measurement accuracy. OpenCV is used for image processing.
 
 Demo: <a href="https://docs.openvino.ai/latest/index.html" target="_blank">https://www.youtube.com/watch?v=joDZVKSOvhM</a>
 
